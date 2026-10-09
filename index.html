@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Women&#039;s Sling Bag</title>
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #17202d;
+    overflow-x: hidden;
+}
+
+img, iframe, svg {
+    max-width: 100%;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+/* CSS LANDING PAGE & TEMPLATE */
+
+@keyframes variantEnter { 
+  0% { opacity: 0; transform: translateY(7px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+.template-workspace { display: grid; grid-template-columns: minmax(0px, 1fr) minmax(360px, 0.95fr); min-height: 570px; }
+.template-selector-area { padding: 30px 28px; border-right: 1px solid
+        var(--border); }
+.template-intro { margin-bottom: 23px; }
+.template-intro h3 { margin-bottom: 6px; color: rgb(220, 228, 239); font-size: 15px; }
+.template-intro p { max-width: 430px; color: rgb(104, 118, 138); font-size: 9px; line-height: 1.65; }
+.template-grid { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 13px; }
+.template-card { padding: 0px; overflow: hidden; border: 1px solid rgb(32, 44, 62); border-radius: 11px; background: rgba(7, 12, 20, 0.5); text-align: left; cursor: pointer; transition: transform 0.22s, border-color 0.22s, box-shadow 0.22s; }
+.template-card:hover { transform: translateY(-3px); border-color: rgb(52, 71, 96); }
+.template-card.active { border-color: rgba(63, 125, 244, 0.7); box-shadow: rgba(63, 125, 244, 0.08) 0px 0px 0px 2px, rgba(0, 0, 0, 0.15) 0px 14px 30px; }
+.template-card-preview { position: relative; height: 150px; padding: 12px; overflow: hidden; }
+.template-card-preview .mini-image { height: 62px; margin-bottom: 10px; border-radius: 6px; }
+.template-card-preview .mini-content { padding: 0px 3px; }
+.template-card-info { padding: 11px 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid rgb(32, 44, 62); }
+.template-card-info > div { display: flex; flex-direction: column; gap: 3px; }
+.template-card-info strong { color: rgb(201, 210, 223); font-size: 9px; }
+.template-card-info span { color: rgb(88, 102, 122); font-size: 7px; }
+.template-check { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(63, 125, 244, 0.1); transition: background 0.2s, color 0.2s; color: transparent !important; font-size: 9px !important; }
+.template-card.active .template-check { background: rgb(57, 125, 244); color: white !important; }
+.template-live-page { min-height: 390px; overflow: hidden; transition: background 0.3s, color 0.3s; }
+.template-live-image { height: 145px; display: flex; align-items: center; justify-content: center; font-size: 8px; font-weight: 800; letter-spacing: 1.4px; }
+.template-live-content { padding: 19px 17px; }
+.template-live-content h4 { margin-bottom: 8px; font-size: 18px; line-height: 1.25; }
+.template-live-content p { margin-bottom: 14px; font-size: 8px; line-height: 1.6; }
+.template-live-badge { display: inline-flex; margin: 13px 0px 0px 13px; padding: 5px 7px; border-radius: 4px; font-size: 6px; font-weight: 850; letter-spacing: 0.7px; }
+.template-demo-price { margin-top: 13px; font-size: 15px; font-weight: 800; }
+.template-live-button { margin-top: 13px; padding: 10px; border-radius: 6px; text-align: center; font-size: 8px; font-weight: 750; }
+.template-social .template-live-page { background: rgb(255, 255, 255); color: rgb(17, 24, 39); }
+.template-social .template-live-badge { background: rgb(17, 24, 39); color: rgb(255, 255, 255); }
+.template-social .template-live-image { margin: 9px 13px 0px; border-radius: 8px; background: linear-gradient(135deg, rgb(237, 240, 245), rgb(223, 229, 237)); color: rgb(154, 166, 183); }
+.template-social .template-live-content p { color: rgb(109, 117, 130); }
+.template-social .template-demo-price { color: rgb(239, 71, 111); }
+.template-social .template-live-button { background: linear-gradient(90deg, rgb(17, 24, 39), rgb(34, 44, 60)); color: white; }
+.template-marketplace .template-live-page { background: rgb(255, 255, 255); color: rgb(37, 37, 37); }
+.template-marketplace .template-live-badge { background: rgb(255, 240, 233); color: rgb(239, 91, 42); }
+.template-marketplace .template-live-image { margin-top: 9px; background: rgb(241, 242, 244); color: rgb(160, 165, 173); }
+.template-marketplace .template-live-content p { color: rgb(119, 119, 119); }
+.template-marketplace .template-demo-price { color: rgb(238, 77, 45); }
+.template-marketplace .template-live-button { background: rgb(238, 77, 45); color: white; }
+.template-premium .template-live-page { background: linear-gradient(rgb(245, 240, 232), rgb(235, 226, 214)); color: rgb(53, 46, 39); }
+.template-premium .template-live-badge { background: transparent; color: rgb(128, 108, 85); letter-spacing: 1.3px; }
+.template-premium .template-live-image { margin: 9px 17px 0px; background: linear-gradient(145deg, rgb(221, 209, 192), rgb(203, 187, 166)); color: rgb(136, 120, 101); }
+.template-premium .template-live-content { text-align: center; }
+.template-premium .template-live-content h4 { font-family: Georgia, serif; font-weight: 500; }
+.template-premium .template-live-content p { color: rgb(121, 108, 93); }
+.template-premium .template-demo-price { color: rgb(102, 81, 61); }
+.template-premium .template-live-button { background: rgb(52, 44, 37); color: rgb(246, 239, 230); }
+.template-minimal .template-live-page { background: rgb(250, 250, 250); color: rgb(24, 24, 24); }
+.template-minimal .template-live-badge { display: none; }
+.template-minimal .template-live-image { margin: 18px 18px 0px; background: rgb(238, 238, 238); color: rgb(170, 170, 170); }
+.template-minimal .template-live-content { padding-top: 22px; }
+.template-minimal .template-live-content p { color: rgb(119, 119, 119); }
+.template-minimal .template-demo-price { color: rgb(34, 34, 34); }
+.template-minimal .template-live-button { border: 1px solid rgb(34, 34, 34); background: transparent; color: rgb(34, 34, 34); }
+.template-variant-area { display: flex; flex-wrap: wrap; gap: 5px; }
+.template-variant-chip { padding: 5px 7px; border: 1px solid rgba(100, 110, 125, 0.2); border-radius: 5px; font-size: 7px; }
+.template-device-button { padding: 7px 10px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 6px; background: transparent; color: rgb(99, 113, 135); font-size: 8px; font-weight: 700; cursor: pointer; }
+.template-device-button.active { background: rgba(63, 125, 244, 0.13); color: rgb(141, 179, 252); }
+@media (max-width: 1050px) {
+.template-workspace { grid-template-columns: 1fr; }
+.template-selector-area { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; border-bottom: 1px solid
+            var(--border); }
+}
+@media (max-width: 720px) {
+.template-grid { grid-template-columns: 1fr; }
+}
+.content-image-section { margin-top: 18px; }
+@keyframes imageRowEnter { 
+  0% { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+.content-image-list { margin-top: 17px; display: flex; flex-direction: column; gap: 10px; }
+.content-image-card { padding: 13px; border: 1px solid rgb(32, 44, 62); border-radius: 9px; background: rgba(4, 8, 14, 0.35); animation: 0.25s ease 0s 1 normal both running imageRowEnter; }
+.content-image-card-top { margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
+.content-image-number { color: rgb(98, 113, 136); font-size: 8px; font-weight: 800; letter-spacing: 0.7px; }
+.content-image-fields { display: flex; flex-direction: column; gap: 8px; }
+.content-image-field span { display: block; margin-bottom: 5px; color: rgb(89, 103, 124); font-size: 7px; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; }
+.content-image-field input, .content-image-field textarea { width: 100%; border: 1px solid rgb(32, 44, 62); border-radius: 7px; outline: none; background: rgba(4, 8, 14, 0.62); color: rgb(233, 238, 246); font-size: 9px; }
+.content-image-field input { height: 37px; padding: 0px 9px; }
+.content-image-field textarea { min-height: 70px; padding: 9px; resize: vertical; line-height: 1.55; }
+.content-image-field input:focus, .content-image-field textarea:focus { border-color: rgba(63, 125, 244, 0.65); box-shadow: rgba(63, 125, 244, 0.07) 0px 0px 0px 3px; }
+.content-image-field input::placeholder, .content-image-field textarea::placeholder { color: rgb(64, 77, 96); }
+.image-preview-hero img, .image-content-render img { display: block; width: 100%; height: auto; }
+.image-content-render { margin-top: 18px; }
+.image-content-render.no-text { margin-top: 5px; }
+.image-content-copy { padding: 15px 17px 3px; }
+.image-content-copy.title-only { padding-bottom: 2px; }
+.image-content-copy h5 { margin-bottom: 7px; color: rgb(30, 41, 57); font-size: 14px; line-height: 1.35; }
+.image-content-copy p { color: rgb(108, 118, 133); font-size: 8px; line-height: 1.65; }
+.template-marketplace .pricing-preview-main { color: rgb(240, 90, 40); }
+.template-marketplace .pricing-preview-discount { color: rgb(240, 90, 40); background: rgba(240, 90, 40, 0.09); }
+.template-premium .pricing-live-page { background: rgb(248, 244, 237); }
+.template-premium .pricing-preview-body h4 { color: rgb(48, 42, 35); }
+.template-premium .pricing-preview-main { color: rgb(141, 104, 67); }
+.template-premium .pricing-preview-discount { color: rgb(141, 104, 67); background: rgba(141, 104, 67, 0.1); }
+.template-minimal .pricing-preview-badge { background: rgb(32, 32, 32); }
+.template-minimal .pricing-preview-main { color: rgb(32, 32, 32); }
+.template-minimal .pricing-preview-discount { color: rgb(32, 32, 32); background: rgb(240, 240, 240); }
+.template-marketplace .testimonial-average-stars, .template-marketplace .testimonial-review-stars { color: rgb(240, 90, 40); }
+.template-premium .testimonial-live-page { background: rgb(248, 244, 237); }
+.template-premium .testimonial-preview-header { border-color: rgb(231, 223, 212); }
+.template-premium .testimonial-preview-item { border-color: rgb(231, 223, 212); }
+.template-premium .testimonial-average-stars, .template-premium .testimonial-review-stars { color: rgb(155, 116, 77); }
+.template-minimal .testimonial-average-stars, .template-minimal .testimonial-review-stars { color: rgb(34, 34, 34); }
+.template-marketplace .countdown-preview { background: rgb(238, 77, 45); }
+.template-premium .popup-timer-preview-page { background: rgb(246, 241, 233); }
+.template-premium .countdown-preview { background: rgb(48, 40, 32); }
+.template-minimal .countdown-preview { background: rgb(255, 255, 255); color: rgb(34, 34, 34); border-bottom: 1px solid rgb(232, 232, 232); }
+.template-minimal .countdown-preview-boxes strong { border: 1px solid rgb(221, 221, 221); }
+.master-cumulative-preview { position: relative; width: 100%; min-height: 540px; padding: 22px; overflow: auto hidden; border: 1px solid rgb(32, 44, 62); border-radius: 14px; background: rgb(9, 16, 26); }
+.master-preview-device { position: relative; width: min(100%, 334px); min-height: 510px; margin: 0px auto; overflow: hidden; border: 1px solid rgb(220, 226, 234); border-radius: 10px; background: rgb(255, 255, 255); color: rgb(23, 32, 45); box-shadow: rgba(0, 0, 0, 0.18) 0px 18px 42px; }
+.master-cumulative-preview.desktop-mode .master-preview-device { width: 720px; max-width: none; }
+.master-preview-browser { height: 28px; padding: 0px 10px; display: flex; align-items: center; gap: 5px; background: rgb(237, 241, 245); }
+.master-preview-browser span { width: 6px; height: 6px; border-radius: 50%; background: rgb(194, 202, 213); }
+.master-preview-page { position: relative; min-height: 600px; background: rgb(255, 255, 255); }
+.master-timer { padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: rgb(23, 33, 49); color: rgb(255, 255, 255); }
+.master-timer span { font-size: 6px; font-weight: 900; letter-spacing: 0.7px; }
+.master-timer strong { white-space: nowrap; font-size: 10px; letter-spacing: 0.8px; }
+.master-hero { position: relative; width: 100%; background: rgb(240, 243, 247); }
+.master-hero img { display: block; width: 100%; height: auto; }
+.master-placeholder { min-height: 185px; display: flex; align-items: center; justify-content: center; color: rgb(161, 170, 183); font-size: 8px; font-weight: 900; letter-spacing: 1.2px; }
+.master-hero-dots { position: absolute; left: 50%; bottom: 9px; display: flex; gap: 4px; transform: translateX(-50%); }
+.master-hero-dots span { width: 5px; height: 5px; border-radius: 50%; background: rgba(255, 255, 255, 0.6); box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px; }
+.master-hero-dots span.active { width: 13px; border-radius: 999px; background: rgb(255, 255, 255); }
+.master-product-main, .master-section, .master-description, .master-order-placeholder { padding: 16px 18px; border-bottom: 1px solid rgb(237, 240, 244); }
+.master-product-main h2 { margin-top: 12px; font-size: 17px; line-height: 1.3; }
+.master-price-block del { display: block; margin-bottom: 3px; color: rgb(154, 163, 175); font-size: 8px; }
+.master-price-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.master-price-row strong { font-size: 19px; line-height: 1.1; }
+.master-price-row span, .master-promo-badge { padding: 4px 6px; border-radius: 4px; background: rgb(255, 77, 58); color: rgb(255, 255, 255); font-size: 6px; font-weight: 900; }
+.master-promo-card { margin-top: 10px; padding: 10px; display: flex; align-items: flex-start; gap: 8px; border-radius: 7px; background: rgb(255, 245, 241); }
+.master-promo-card strong { display: block; font-size: 8px; }
+.master-promo-card p { margin-top: 2px; color: rgb(111, 119, 131); font-size: 7px; line-height: 1.45; }
+.master-accordion-button { width: 100%; padding: 0px; display: flex; align-items: center; justify-content: space-between; border: 0px; background: transparent; color: inherit; font-size: 10px; font-weight: 850; text-align: left; cursor: pointer; }
+.master-accordion-button b { font-size: 15px; transition: transform 0.22s; }
+.master-description.is-open .master-accordion-button b { transform: rotate(180deg); }
+.master-accordion-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.24s, margin-top 0.24s; }
+.master-description.is-open .master-accordion-content { grid-template-rows: 1fr; margin-top: 11px; }
+.master-accordion-content p { min-height: 0px; overflow: hidden; color: rgb(98, 109, 124); font-size: 8px; line-height: 1.7; white-space: pre-wrap; }
+.master-section-title { margin-bottom: 10px; font-size: 10px; font-weight: 850; }
+.master-variant-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.master-variant-item { padding: 7px 9px; display: flex; align-items: center; gap: 7px; border: 1px solid rgb(225, 230, 236); border-radius: 6px; font-size: 7px; }
+.master-variant-item strong { font-size: 7px; }
+.master-content-list { background: rgb(255, 255, 255); }
+.master-content-item { border-bottom: 1px solid rgb(237, 240, 244); }
+.master-content-item img { display: block; width: 100%; height: auto; }
+.master-content-copy { padding: 14px 18px 17px; }
+.master-content-copy h4 { margin-bottom: 5px; font-size: 12px; }
+.master-content-copy p { color: rgb(102, 113, 127); font-size: 8px; line-height: 1.65; white-space: pre-wrap; }
+.master-content-item.no-copy + .master-content-item.no-copy { margin-top: 5px; }
+.master-review-heading > span { display: block; margin-bottom: 5px; color: rgb(154, 164, 178); font-size: 5px; font-weight: 900; letter-spacing: 1px; }
+.master-review-heading h3 { font-size: 14px; }
+.master-review-summary { margin-top: 10px; display: flex; align-items: center; gap: 9px; }
+.master-review-summary > strong { font-size: 27px; }
+.master-review-summary div span, .master-review-user span { display: block; color: rgb(255, 91, 50); font-size: 7px; letter-spacing: 0.5px; }
+.master-review-summary small { display: block; margin-top: 2px; color: rgb(140, 150, 164); font-size: 5px; }
+.master-review-list { margin-top: 13px; }
+.master-review-item { padding: 13px 0px; border-top: 1px solid rgb(237, 240, 244); }
+.master-review-user { display: flex; align-items: center; gap: 8px; }
+.master-avatar { width: 30px; height: 30px; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 50%; background: rgb(238, 242, 246); color: rgb(135, 146, 161); font-size: 7px; font-weight: 850; }
+.master-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.master-review-user strong { display: block; margin-bottom: 2px; font-size: 7px; }
+.master-review-item > p { margin-top: 8px; color: rgb(80, 91, 105); font-size: 8px; line-height: 1.6; white-space: pre-wrap; }
+.master-review-photos { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 5px; }
+.master-review-photos img { width: 55px; height: 55px; object-fit: cover; border-radius: 5px; }
+.master-empty-review { padding: 15px 0px 2px; color: rgb(154, 163, 175); font-size: 7px; }
+.master-order-placeholder { text-align: center; background: rgb(250, 251, 252); }
+.master-order-placeholder span { display: block; margin-bottom: 5px; color: rgb(155, 165, 178); font-size: 5px; font-weight: 900; letter-spacing: 1px; }
+.master-order-placeholder strong { color: rgb(124, 135, 149); font-size: 7px; }
+.master-activity-popup { position: absolute; right: 10px; bottom: 10px; width: min(225px, 100% - 20px); padding: 9px; display: flex; align-items: flex-start; gap: 8px; border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 9px; background: rgba(255, 255, 255, 0.55); backdrop-filter: blur(12px); box-shadow: rgba(20, 29, 42, 0.12) 0px 10px 28px; color: rgb(48, 59, 73); }
+.master-wa-badge { width: 29px; height: 29px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 50%; background: rgb(34, 199, 101); color: rgb(255, 255, 255); font-size: 7px; font-weight: 900; }
+.master-activity-popup strong { display: block; font-size: 7px; }
+.master-activity-popup p { margin-top: 2px; color: rgb(104, 115, 130); font-size: 6px; line-height: 1.4; }
+.master-activity-popup time { display: block; margin-top: 3px; color: rgb(154, 163, 175); font-size: 5px; }
+.master-preview-device.template-social .master-price-row strong, .master-preview-device.template-social .master-product-main h2 { color: rgb(23, 28, 38); }
+.master-preview-device.template-social .master-timer { background: linear-gradient(100deg, rgb(255, 77, 58), rgb(255, 113, 61)); }
+.master-preview-device.template-marketplace .master-timer, .master-preview-device.template-marketplace .master-price-row span, .master-preview-device.template-marketplace .master-promo-badge { background: rgb(238, 77, 45); }
+.master-preview-device.template-marketplace .master-price-row strong { color: rgb(238, 77, 45); }
+.master-preview-device.template-premium .master-preview-page, .master-preview-device.template-premium .master-content-list { background: rgb(248, 244, 237); }
+.master-preview-device.template-premium .master-product-main, .master-preview-device.template-premium .master-section, .master-preview-device.template-premium .master-description, .master-preview-device.template-premium .master-content-item, .master-preview-device.template-premium .master-review-item { border-color: rgb(231, 223, 212); }
+.master-preview-device.template-premium .master-timer { background: rgb(48, 40, 32); }
+.master-preview-device.template-premium .master-price-row strong, .master-preview-device.template-premium .master-product-main h2 { color: rgb(48, 40, 32); }
+.master-preview-device.template-premium .master-price-row span, .master-preview-device.template-premium .master-promo-badge { background: rgb(155, 116, 77); }
+.master-preview-device.template-minimal .master-timer { background: rgb(255, 255, 255); color: rgb(34, 34, 34); border-bottom: 1px solid rgb(232, 232, 232); }
+.master-preview-device.template-minimal .master-price-row span, .master-preview-device.template-minimal .master-promo-badge { background: rgb(34, 34, 34); }
+.master-preview-device.template-minimal .master-price-row strong, .master-preview-device.template-minimal .master-product-main h2 { color: rgb(34, 34, 34); }
+.master-preview-device.template-minimal .master-promo-card { background: rgb(245, 245, 245); }
+@media (max-width: 650px) {
+.master-cumulative-preview { padding: 12px; }
+}
+.master-description-text, .master-content-description, .master-review-text { white-space: normal; overflow-wrap: anywhere; color: rgb(89, 98, 115); font-size: 12px; line-height: 1.75; }
+.master-description-text br, .master-content-description br, .master-review-text br { content: ""; }
+.master-cumulative-preview.mobile-mode .master-preview-device { width: 334px; max-width: 100%; }
+.master-cumulative-preview.desktop-mode { display: block; overflow-x: auto; }
+.master-cumulative-preview.desktop-mode .master-preview-device { width: 720px; min-width: 720px; margin-left: 0px; margin-right: 0px; }
+.master-cumulative-preview.desktop-mode .master-preview-page { min-height: 600px; }
+.master-cumulative-preview.desktop-mode .master-product-main, .master-cumulative-preview.desktop-mode .master-description, .master-cumulative-preview.desktop-mode .master-section { padding-left: 34px; padding-right: 34px; }
+.master-cumulative-preview.desktop-mode .master-product-main h2 { font-size: 24px; }
+.master-cumulative-preview.desktop-mode .master-description-text { font-size: 13px; line-height: 1.8; }
+.master-preview-device { --lp-bg: #ffffff; --lp-surface: #ffffff; --lp-text: #181b20; --lp-muted: #747b86; --lp-border: #eceef1; --lp-accent: #111111; position: relative; overflow: hidden; background: var(--lp-bg); color: var(--lp-text); }
+.master-preview-page { background: var(--lp-bg); }
+.master-preview-page section { box-sizing: border-box; }
+.master-product-main h2 { color: var(--lp-text); }
+.master-preview-device.template-social { --lp-bg: #f5f5f5; --lp-surface: #ffffff; --lp-text: #151515; --lp-muted: #737373; --lp-border: #ececec; --lp-accent: #ff315b; background: rgb(245, 245, 245); }
+.template-social .master-hero { position: relative; margin: 0px; overflow: hidden; background: rgb(238, 238, 238); }
+.template-social .master-hero img { display: block; width: 100%; height: auto; }
+.template-social .master-product-main { margin-top: 7px; padding: 14px 15px 16px; background: rgb(255, 255, 255); border-radius: 0px; }
+.template-social .master-price-block { padding: 0px; background: transparent; }
+.template-social .master-price-row { display: flex; align-items: center; gap: 8px; }
+.template-social .master-price-row strong { color: rgb(255, 49, 91); font-size: 22px; font-weight: 900; letter-spacing: -0.6px; }
+.template-social .master-price-row span { padding: 3px 6px; border-radius: 4px; background: rgb(255, 232, 237); color: rgb(255, 49, 91); font-size: 8px; font-weight: 900; }
+.template-social .master-price-block del { color: rgb(164, 164, 164); font-size: 9px; }
+.template-social .master-product-main h2 { margin: 10px 0px 0px; font-size: 15px; line-height: 1.45; font-weight: 700; }
+.template-social .master-promo-card { margin-top: 11px; padding: 10px 11px; display: flex; align-items: center; gap: 9px; border: 1px solid rgb(255, 214, 223); border-radius: 7px; background: linear-gradient(135deg, rgb(255, 243, 246), rgb(255, 255, 255)); }
+.template-social .master-promo-badge { flex-shrink: 0; padding: 5px 7px; border-radius: 5px; background: rgb(255, 49, 91); color: rgb(255, 255, 255); font-size: 7px; font-weight: 900; }
+.template-social .master-promo-card strong { display: block; color: rgb(41, 41, 41); font-size: 9px; }
+.template-social .master-promo-card p { margin-top: 2px; color: rgb(124, 124, 124); font-size: 8px; line-height: 1.5; }
+.template-social .master-timer { padding: 9px 13px; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: linear-gradient(90deg, rgb(255, 49, 91), rgb(255, 106, 77)); color: rgb(255, 255, 255); }
+.template-social .master-timer > span { font-size: 8px; font-weight: 800; }
+.template-social .master-timer strong { padding: 4px 7px; border-radius: 5px; background: rgba(0, 0, 0, 0.16); font-size: 10px; letter-spacing: 1px; }
+.template-social .master-description, .template-social .master-section { margin-top: 7px; background: rgb(255, 255, 255); }
+.template-social .master-variants { padding: 14px 15px; }
+.template-social .master-variant-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.template-social .master-variant-item { padding: 7px 10px; border: 1px solid rgb(231, 231, 231); border-radius: 6px; background: rgb(255, 255, 255); font-size: 9px; }
+.template-social .master-variant-item:first-child { border-color: rgb(255, 49, 91); color: rgb(255, 49, 91); }
+.master-preview-device.template-marketplace { --lp-bg: #f5f5f5; --lp-surface: #ffffff; --lp-text: #252525; --lp-muted: #777777; --lp-border: #ededed; --lp-accent: #ee4d2d; background: rgb(245, 245, 245); }
+.template-marketplace .master-hero { background: rgb(255, 255, 255); border-bottom: 1px solid rgb(238, 238, 238); }
+.template-marketplace .master-hero img { display: block; width: 100%; height: auto; }
+.template-marketplace .master-product-main { margin: 7px 0px 0px; padding: 15px; background: rgb(255, 255, 255); border-top: 1px solid rgb(238, 238, 238); border-bottom: 1px solid rgb(238, 238, 238); }
+.template-marketplace .master-price-block { padding: 0px; }
+.template-marketplace .master-price-row { display: flex; align-items: center; gap: 9px; }
+.template-marketplace .master-price-row strong { color: rgb(238, 77, 45); font-size: 23px; font-weight: 500; }
+.template-marketplace .master-price-row span { padding: 3px 6px; background: rgb(238, 77, 45); color: rgb(255, 255, 255); border-radius: 2px; font-size: 7px; font-weight: 800; }
+.template-marketplace .master-price-block del { color: rgb(153, 153, 153); font-size: 9px; }
+.template-marketplace .master-product-main h2 { margin: 11px 0px 0px; color: rgb(34, 34, 34); font-size: 14px; font-weight: 500; line-height: 1.5; }
+.template-marketplace .master-promo-card { margin-top: 12px; padding: 10px; display: flex; align-items: center; gap: 9px; border: 1px solid rgb(255, 225, 216); border-radius: 3px; background: rgb(255, 248, 246); }
+.template-marketplace .master-promo-badge { padding: 4px 6px; background: rgb(238, 77, 45); color: white; font-size: 7px; font-weight: 800; }
+.template-marketplace .master-promo-card strong { color: rgb(74, 74, 74); font-size: 9px; }
+.template-marketplace .master-promo-card p { margin-top: 2px; color: rgb(136, 136, 136); font-size: 8px; }
+.template-marketplace .master-timer { padding: 9px 14px; display: flex; align-items: center; justify-content: space-between; background: rgb(238, 77, 45); color: rgb(255, 255, 255); }
+.template-marketplace .master-timer span { font-size: 8px; font-weight: 600; }
+.template-marketplace .master-timer strong { padding: 4px 7px; background: rgba(255, 255, 255, 0.18); border-radius: 3px; font-size: 10px; }
+.template-marketplace .master-variants { margin-top: 7px; padding: 15px; background: rgb(255, 255, 255); border-top: 1px solid rgb(238, 238, 238); border-bottom: 1px solid rgb(238, 238, 238); }
+.template-marketplace .master-variant-list { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 7px; }
+.template-marketplace .master-variant-item { padding: 8px; border: 1px solid rgb(222, 222, 222); border-radius: 2px; background: rgb(255, 255, 255); font-size: 9px; }
+.template-marketplace .master-variant-item:first-child { border-color: rgb(238, 77, 45); color: rgb(238, 77, 45); }
+.master-preview-device.template-premium { --lp-bg: #f5f1eb; --lp-surface: #faf8f4; --lp-text: #25211d; --lp-muted: #81786f; --lp-border: #ded7cd; --lp-accent: #7b5c3f; background: rgb(245, 241, 235); }
+.template-premium .master-hero { margin: 12px; overflow: hidden; border-radius: 14px; background: rgb(233, 225, 215); box-shadow: rgba(62, 45, 29, 0.08) 0px 12px 28px; }
+.template-premium .master-hero img { display: block; width: 100%; height: auto; }
+.template-premium .master-timer { margin: 12px 16px 0px; padding: 11px 13px; display: flex; align-items: center; justify-content: space-between; border: 1px solid rgb(216, 206, 194); background: transparent; color: rgb(69, 58, 49); }
+.template-premium .master-timer span { font-size: 7px; font-weight: 700; letter-spacing: 1.1px; }
+.template-premium .master-timer strong { font-family: Georgia, "Times New Roman", serif; font-size: 13px; font-weight: 500; }
+.template-premium .master-product-main { margin: 0px; padding: 22px 19px; background: transparent; text-align: center; }
+.template-premium .master-price-block { padding: 0px; }
+.template-premium .master-price-row { display: flex; justify-content: center; align-items: center; gap: 10px; }
+.template-premium .master-price-row strong { color: rgb(92, 70, 52); font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 500; }
+.template-premium .master-price-row span { padding: 4px 7px; border: 1px solid rgb(185, 165, 144); color: rgb(110, 85, 64); background: transparent; font-size: 7px; letter-spacing: 0.7px; }
+.template-premium .master-price-block del { color: rgb(156, 146, 136); font-size: 9px; }
+.template-premium .master-product-main h2 { margin: 15px auto 0px; max-width: 85%; color: rgb(40, 35, 31); font-family: Georgia, "Times New Roman", serif; font-size: 20px; font-weight: 500; line-height: 1.35; }
+.template-premium .master-promo-card { margin: 15px auto 0px; max-width: 92%; padding: 11px; display: flex; justify-content: center; align-items: center; gap: 10px; border-top: 1px solid rgb(217, 208, 198); border-bottom: 1px solid rgb(217, 208, 198); background: transparent; }
+.template-premium .master-promo-badge { padding: 4px 7px; background: rgb(95, 73, 55); color: rgb(255, 255, 255); font-size: 6px; letter-spacing: 0.8px; }
+.template-premium .master-promo-card strong { color: rgb(75, 64, 55); font-family: Georgia, "Times New Roman", serif; font-size: 9px; }
+.template-premium .master-promo-card p { margin-top: 3px; color: rgb(139, 128, 118); font-size: 8px; }
+.template-premium .master-section, .template-premium .master-description { margin: 0px 14px 12px; border: 1px solid rgb(222, 214, 204); background: rgba(255, 255, 255, 0.36); }
+.template-premium .master-variants { padding: 17px; }
+.template-premium .master-section-title { font-family: Georgia, "Times New Roman", serif; color: rgb(68, 58, 50); }
+.template-premium .master-variant-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.template-premium .master-variant-item { padding: 8px 13px; border: 1px solid rgb(207, 195, 183); background: transparent; color: rgb(95, 84, 75); font-size: 8px; }
+.template-premium .master-content-item { margin: 0px 14px 18px; overflow: hidden; background: transparent; }
+.template-premium .master-content-copy { padding: 17px 10px; text-align: center; }
+.template-premium .master-content-copy h4 { font-family: Georgia, "Times New Roman", serif; font-size: 15px; font-weight: 500; color: rgb(51, 44, 39); }
+.master-preview-device.template-minimal { --lp-bg: #ffffff; --lp-surface: #ffffff; --lp-text: #111111; --lp-muted: #777777; --lp-border: #e8e8e8; --lp-accent: #111111; background: rgb(255, 255, 255); }
+.template-minimal .master-hero { margin: 14px; overflow: hidden; background: rgb(245, 245, 245); }
+.template-minimal .master-hero img { display: block; width: 100%; height: auto; }
+.template-minimal .master-timer { margin: 0px 18px; padding: 10px 0px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgb(232, 232, 232); border-bottom: 1px solid rgb(232, 232, 232); background: transparent; color: rgb(34, 34, 34); }
+.template-minimal .master-timer span { font-size: 7px; font-weight: 700; letter-spacing: 0.8px; }
+.template-minimal .master-timer strong { font-size: 10px; }
+.template-minimal .master-product-main { padding: 19px 18px; background: rgb(255, 255, 255); }
+.template-minimal .master-price-block { padding: 0px; }
+.template-minimal .master-price-row strong { color: rgb(17, 17, 17); font-size: 18px; font-weight: 700; }
+.template-minimal .master-price-row span { margin-left: 7px; padding: 3px 5px; border: 1px solid rgb(34, 34, 34); background: transparent; color: rgb(34, 34, 34); font-size: 6px; font-weight: 700; }
+.template-minimal .master-price-block del { color: rgb(153, 153, 153); font-size: 8px; }
+.template-minimal .master-product-main h2 { margin: 13px 0px 0px; font-size: 16px; font-weight: 600; line-height: 1.5; }
+.template-minimal .master-promo-card { margin-top: 15px; padding: 10px 0px; display: flex; align-items: center; gap: 10px; border-top: 1px solid rgb(232, 232, 232); border-bottom: 1px solid rgb(232, 232, 232); background: transparent; }
+.template-minimal .master-promo-badge { padding: 4px 6px; border: 1px solid rgb(34, 34, 34); background: rgb(255, 255, 255); color: rgb(34, 34, 34); font-size: 6px; font-weight: 800; }
+.template-minimal .master-promo-card strong { color: rgb(34, 34, 34); font-size: 8px; }
+.template-minimal .master-promo-card p { margin-top: 2px; color: rgb(136, 136, 136); font-size: 7px; }
+.template-minimal .master-variants { margin: 0px 18px; padding: 16px 0px; border-top: 1px solid rgb(232, 232, 232); background: transparent; }
+.template-minimal .master-variant-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.template-minimal .master-variant-item { padding: 7px 11px; border: 1px solid rgb(216, 216, 216); border-radius: 0px; background: transparent; color: rgb(51, 51, 51); font-size: 8px; }
+.master-cumulative-preview.desktop-mode .template-social .master-product-main { padding: 22px 28px; }
+.master-cumulative-preview.desktop-mode .template-social .master-product-main h2 { max-width: 600px; }
+.master-cumulative-preview.desktop-mode .template-marketplace .master-product-main { padding: 22px 30px; }
+.master-cumulative-preview.desktop-mode .template-marketplace .master-variant-list { grid-template-columns: repeat(4, minmax(0px, 1fr)); }
+.master-cumulative-preview.desktop-mode .template-premium .master-hero { margin: 22px 40px; }
+.master-cumulative-preview.desktop-mode .template-premium .master-product-main { padding: 30px 45px; }
+.master-cumulative-preview.desktop-mode .template-premium .master-product-main h2 { font-size: 27px; }
+.master-cumulative-preview.desktop-mode .template-minimal .master-hero { margin: 24px 34px; }
+.master-cumulative-preview.desktop-mode .template-minimal .master-product-main { padding: 26px 34px; }
+.master-content-list { background: var(--lp-bg); }
+.master-content-item { overflow: hidden; background: var(--lp-surface); }
+.master-content-item img { display: block; width: 100%; height: auto; }
+.master-content-copy { padding: 14px 15px; }
+.master-content-copy h4 { margin: 0px; color: var(--lp-text); font-size: 12px; line-height: 1.45; }
+.master-content-description { margin-top: 5px; color: var(--lp-muted); font-size: 10px; line-height: 1.7; }
+.master-content-item.no-copy + .master-content-item.no-copy { margin-top: 4px; }
+.master-reviews { box-sizing: border-box; padding: 17px 15px; background: var(--lp-surface); }
+.master-review-heading > span { display: block; margin-bottom: 4px; color: var(--lp-muted); font-size: 8px; font-weight: 800; letter-spacing: 0.8px; }
+.master-review-heading h3 { margin: 0px; color: var(--lp-text); font-size: 15px; font-weight: 750; }
+.master-review-summary { margin-top: 11px; display: flex; align-items: center; gap: 9px; }
+.master-review-summary > strong { color: var(--lp-text); font-size: 22px; }
+.master-review-summary div span { display: block; color: rgb(245, 166, 35); font-size: 11px; letter-spacing: 1px; }
+.master-review-summary small { display: block; margin-top: 3px; color: var(--lp-muted); font-size: 9px; }
+.master-review-list { margin-top: 13px; }
+.master-review-item { padding: 14px 0px; border-top: 1px solid
+        var(--lp-border); }
+.master-review-user { display: flex; align-items: center; gap: 10px; }
+.master-avatar { width: 34px; height: 34px; flex-shrink: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgb(238, 238, 238); color: rgb(119, 119, 119); font-size: 10px; font-weight: 800; }
+.master-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.master-review-user strong { display: block; color: var(--lp-text); font-size: 11px; font-weight: 700; }
+.master-review-user span { display: block; margin-top: 3px; color: rgb(245, 166, 35); font-size: 10px; letter-spacing: 0.8px; }
+.master-review-text { margin-top: 10px; color: rgb(81, 88, 100); font-size: 11px !important; line-height: 1.7 !important; }
+.master-review-photos { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.master-review-photos img { width: 64px; height: 64px; object-fit: cover; border-radius: 5px; }
+.template-social .master-reviews { margin-top: 7px; }
+.template-social .master-review-user span { color: rgb(255, 49, 91); }
+.template-marketplace .master-reviews { margin-top: 7px; border-top: 1px solid rgb(238, 238, 238); }
+.template-marketplace .master-review-user span { color: rgb(238, 77, 45); }
+.template-premium .master-reviews { margin: 0px 14px 14px; border: 1px solid rgb(222, 214, 204); background: rgba(255, 255, 255, 0.35); }
+.template-premium .master-review-heading h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+.template-premium .master-review-user span { color: rgb(154, 118, 82); }
+.template-minimal .master-reviews { margin: 0px 18px; padding-left: 0px; padding-right: 0px; border-top: 1px solid rgb(232, 232, 232); }
+.master-cumulative-preview.desktop-mode .master-reviews { padding: 24px 30px; }
+.master-cumulative-preview.desktop-mode .master-review-text { font-size: 13px !important; }
+.master-cumulative-preview.desktop-mode .master-review-user strong { font-size: 12px; }
+.master-cumulative-preview.desktop-mode .master-review-photos img { width: 76px; height: 76px; }
+.template-minimal .master-price-row span { padding: 3px 6px; border: 1px solid rgb(216, 216, 216); border-radius: 3px; font-size: 7px; font-weight: 700; background: rgb(255, 255, 255) !important; color: rgb(51, 51, 51) !important; }
+.template-minimal .master-promo-badge { padding: 4px 7px; border: 1px solid rgb(216, 216, 216); border-radius: 3px; font-size: 7px; font-weight: 700; background: rgb(255, 255, 255) !important; color: rgb(51, 51, 51) !important; }
+.master-promo-timer { box-sizing: border-box; width: 100%; display: grid; grid-template-columns: minmax(0px, 1.25fr) minmax(105px, 0.75fr); gap: 8px; padding: 9px; background: rgb(255, 255, 255); border-bottom: 1px solid rgb(238, 238, 238); }
+.master-promo-timer.single-item { grid-template-columns: 1fr; }
+.master-promo-timer-promo, .master-promo-timer-countdown { min-width: 0px; }
+.master-promo-timer .master-promo-card, .master-promo-timer .master-timer { width: 100%; height: 100%; box-sizing: border-box; margin: 0px; }
+.master-promo-timer .master-promo-card { min-height: 58px; display: flex; align-items: center; }
+.master-promo-timer .master-timer { min-height: 58px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.master-promo-timer .master-timer > span { line-height: 1.35; }
+.master-promo-timer .master-timer > strong { margin-top: 5px; white-space: nowrap; }
+.master-store { box-sizing: border-box; display: flex; align-items: center; gap: 11px; padding: 13px 15px; background: var(--lp-surface, #ffffff); border-top: 1px solid
+        var(--lp-border, #eeeeee); border-bottom: 1px solid
+        var(--lp-border, #eeeeee); }
+.master-store-logo { width: 38px; height: 38px; flex-shrink: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid
+        var(--lp-border, #e8e8e8); border-radius: 50%; background: rgb(243, 244, 245); color: rgb(69, 75, 85); font-size: 11px; font-weight: 850; letter-spacing: 0.3px; }
+.master-store-logo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.master-store-info { min-width: 0px; }
+.master-store-info small { display: block; margin-bottom: 3px; color: var(--lp-muted, #8a8f98); font-size: 7px; font-weight: 800; letter-spacing: 0.8px; }
+.master-store-info strong { display: block; overflow: hidden; color: var(--lp-text, #222222); font-size: 11px; font-weight: 750; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+.template-social .master-promo-timer { background: rgb(255, 255, 255); }
+.template-social .master-promo-timer .master-promo-card { border: 1px solid rgb(255, 214, 223); border-radius: 8px; }
+.template-social .master-promo-timer .master-timer { border-radius: 8px; background: linear-gradient(135deg, rgb(255, 49, 91), rgb(255, 101, 77)); color: rgb(255, 255, 255); }
+.template-social .master-store { margin-top: 7px; }
+.template-marketplace .master-promo-timer { background: rgb(255, 255, 255); border-top: 1px solid rgb(238, 238, 238); }
+.template-marketplace .master-promo-timer .master-promo-card { border: 1px solid rgb(255, 225, 216); border-radius: 3px; }
+.template-marketplace .master-promo-timer .master-timer { border-radius: 3px; background: rgb(238, 77, 45); color: rgb(255, 255, 255); }
+.template-marketplace .master-store { margin-top: 7px; background: rgb(255, 255, 255); }
+.template-premium .master-promo-timer { margin: 0px 14px 14px; width: auto; padding: 0px; gap: 10px; background: transparent; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; }
+.template-premium .master-promo-timer .master-promo-card, .template-premium .master-promo-timer .master-timer { border: 1px solid rgb(216, 206, 194); background: rgba(255, 255, 255, 0.28); color: rgb(69, 58, 49); }
+.template-premium .master-store { margin: 0px 14px 14px; border: 1px solid rgb(222, 214, 204); background: rgba(255, 255, 255, 0.34); }
+.template-premium .master-store-logo { border-radius: 4px; background: rgb(235, 227, 218); }
+.template-premium .master-store-info strong { font-family: Georgia, "Times New Roman", serif; font-size: 12px; font-weight: 500; }
+.template-minimal .master-promo-timer { margin: 0px 18px; width: auto; padding: 12px 0px; background: transparent; border-top: 1px solid rgb(232, 232, 232); border-bottom: 1px solid rgb(232, 232, 232); }
+.template-minimal .master-promo-timer .master-promo-card, .template-minimal .master-promo-timer .master-timer { border: 1px solid rgb(228, 228, 228); background: rgb(255, 255, 255); color: rgb(34, 34, 34); }
+.template-minimal .master-store { margin: 0px 18px; padding-left: 0px; padding-right: 0px; border-left-width: medium; border-left-style: none; border-left-color: currentcolor; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; background: transparent; }
+.template-minimal .master-store-logo { border-radius: 0px; background: rgb(255, 255, 255); }
+.master-cumulative-preview.desktop-mode .master-promo-timer { grid-template-columns: minmax(0px, 1.5fr) minmax(190px, 0.5fr); gap: 12px; }
+.master-cumulative-preview.desktop-mode .master-store { padding-top: 16px; padding-bottom: 16px; }
+.master-cumulative-preview.desktop-mode .master-store-logo { width: 44px; height: 44px; }
+.master-cumulative-preview.desktop-mode .master-store-info strong { font-size: 13px; }
+.master-promo-timer { align-items: center; width: 100% !important; margin: 0px !important; padding: 8px 12px !important; display: grid !important; grid-template-columns: minmax(0px, 1fr) auto !important; gap: 10px !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; border-radius: 0px !important; box-shadow: none !important; }
+.master-promo-timer-promo { min-width: 0px; }
+.master-promo-timer .master-promo-card { width: auto !important; min-height: 0px !important; margin: 0px !important; padding: 0px !important; display: block !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; border-radius: 0px !important; background: transparent !important; box-shadow: none !important; }
+.master-promo-timer .master-promo-badge { display: block; width: max-content; font-style: italic; line-height: 1; text-transform: uppercase; margin: 0px 0px 2px !important; padding: 0px !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; border-radius: 0px !important; background: transparent !important; color: inherit !important; font-size: 11px !important; font-weight: 900 !important; }
+.master-promo-timer .master-promo-card strong { display: block; font-weight: 800; line-height: 1.2; text-transform: uppercase; margin: 0px !important; color: inherit !important; font-size: 7px !important; }
+.master-promo-timer .master-promo-card p { display: none !important; }
+.master-promo-timer-countdown { min-width: 100px; }
+.master-promo-timer .master-timer { flex-direction: column; justify-content: center; text-align: right; width: auto !important; min-height: 0px !important; margin: 0px !important; padding: 0px !important; display: flex !important; align-items: flex-end !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; border-radius: 0px !important; background: transparent !important; color: inherit !important; box-shadow: none !important; }
+.master-promo-timer .master-timer > span { position: relative; display: flex; align-items: center; justify-content: flex-end; gap: 4px; font-weight: 800; line-height: 1; white-space: nowrap; text-transform: uppercase; margin: 0px 0px 4px !important; color: inherit !important; font-size: 7px !important; }
+.master-promo-timer .master-timer > span::before { content: ""; width: 8px; height: 8px; flex: 0 0 8px; border: 1.2px solid; border-radius: 50%; box-sizing: border-box; background: transparent !important; }
+.master-promo-timer .master-timer > span::after { content: ""; position: absolute; left: 3px; top: 1.8px; width: 2px; height: 3px; border-left: 1px solid; border-bottom: 1px solid; transform: rotate(-8deg); transform-origin: left bottom; }
+.master-promo-timer .master-timer > strong { font-weight: 850; line-height: 1; letter-spacing: 1.2px; margin: 0px !important; padding: 4px 7px !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; border-radius: 3px !important; color: rgb(255, 255, 255) !important; font-size: 8px !important; }
+.template-social .master-promo-timer { background: linear-gradient(100deg, rgb(223, 133, 136), rgb(216, 120, 124)) !important; color: rgb(255, 255, 255) !important; }
+.template-social .master-promo-timer .master-timer > strong { background: rgba(88, 31, 35, 0.32) !important; }
+.template-marketplace .master-promo-timer { background: linear-gradient(100deg, rgb(238, 77, 45), rgb(243, 107, 70)) !important; color: rgb(255, 255, 255) !important; }
+.template-marketplace .master-promo-timer .master-timer > strong { background: rgba(125, 35, 18, 0.3) !important; }
+.template-premium .master-promo-timer { background: linear-gradient(100deg, rgb(102, 84, 71), rgb(128, 107, 90)) !important; color: rgb(255, 250, 244) !important; }
+.template-premium .master-promo-timer .master-timer > strong { background: rgba(35, 27, 21, 0.32) !important; }
+.template-minimal .master-promo-timer { background: rgb(243, 243, 241) !important; color: rgb(34, 34, 34) !important; border-top: 1px solid rgb(222, 222, 219) !important; border-bottom: 1px solid rgb(222, 222, 219) !important; }
+.template-minimal .master-promo-timer .master-timer > strong { background: rgb(34, 34, 34) !important; color: rgb(255, 255, 255) !important; }
+.master-cumulative-preview.mobile-mode .master-promo-timer { padding: 8px 11px !important; gap: 8px !important; }
+.master-cumulative-preview.desktop-mode .master-promo-timer { padding: 10px 18px !important; gap: 16px !important; }
+.master-cumulative-preview.desktop-mode .master-promo-timer .master-promo-badge { font-size: 13px !important; }
+.master-cumulative-preview.desktop-mode .master-promo-timer .master-promo-card strong { font-size: 8px !important; }
+.master-cumulative-preview.desktop-mode .master-promo-timer .master-timer > span { font-size: 8px !important; }
+.master-cumulative-preview.desktop-mode .master-promo-timer .master-timer > strong { padding: 5px 8px !important; font-size: 9px !important; }
+.master-hero { position: relative; overflow: hidden; touch-action: pan-y; }
+.master-hero-track { position: relative; width: 100%; }
+.master-hero-slide { display: none; width: 100%; }
+.master-hero-slide.active { display: block; animation: 0.32s ease 0s 1 normal none running masterHeroFade; }
+.master-hero-slide img { display: block; user-select: none; -webkit-user-drag: none; width: 100% !important; height: auto !important; object-fit: contain !important; }
+.master-hero.single-image .master-hero-slide { display: block; }
+.master-hero-arrow { position: absolute; top: 50%; z-index: 5; width: 28px; height: 28px; padding: 0px; display: flex; align-items: center; justify-content: center; transform: translateY(-50%); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 50%; background: rgba(20, 20, 20, 0.38); color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 15px; line-height: 1; cursor: pointer; backdrop-filter: blur(4px); transition: transform 0.2s, background 0.2s, opacity 0.2s; }
+.master-hero-prev { left: 9px; }
+.master-hero-next { right: 9px; }
+.master-hero-arrow:hover { background: rgba(20, 20, 20, 0.58); }
+.master-hero-dots { position: absolute; left: 50%; bottom: 9px; z-index: 6; display: flex; align-items: center; gap: 5px; transform: translateX(-50%); }
+.master-hero-dot { width: 6px; height: 6px; min-width: 6px; margin: 0px; padding: 0px; border: 0px; border-radius: 999px; background: rgba(255, 255, 255, 0.62); box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 5px; cursor: pointer; transition: width 0.25s, background 0.25s, transform 0.25s; }
+.master-hero-dot.active { width: 17px; background: rgb(255, 255, 255); }
+.master-cumulative-preview.mobile-mode .master-hero-arrow { width: 25px; height: 25px; font-size: 13px; opacity: 0.82; }
+.master-cumulative-preview.mobile-mode .master-hero-prev { left: 7px; }
+.master-cumulative-preview.mobile-mode .master-hero-next { right: 7px; }
+.master-cumulative-preview.desktop-mode .master-hero-arrow { width: 34px; height: 34px; font-size: 18px; }
+.master-cumulative-preview.desktop-mode .master-hero-prev { left: 14px; }
+.master-cumulative-preview.desktop-mode .master-hero-next { right: 14px; }
+.template-premium .master-hero-arrow { background: rgba(55, 42, 32, 0.48); }
+.template-premium .master-hero-dot.active { background: rgb(255, 250, 244); }
+.template-minimal .master-hero-arrow { border: 1px solid rgba(255, 255, 255, 0.65); background: rgba(0, 0, 0, 0.42); }
+@keyframes masterHeroFade { 
+  0% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+.master-description { overflow: hidden; }
+.master-accordion-button { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0px; border: 0px; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.master-accordion-button span { font-weight: 800; line-height: 1.3; }
+.master-accordion-button b { flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; font-family: Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 1; transform: rotate(0deg); transition: transform 0.28s; }
+.master-description.is-open .master-accordion-button b { transform: rotate(180deg); }
+.master-accordion-content { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows 0.32s, opacity 0.22s, margin-top 0.32s; margin-top: 0px; }
+.master-accordion-content .master-description-text { min-height: 0px; overflow: hidden; }
+.master-description.is-open .master-accordion-content { grid-template-rows: 1fr; opacity: 1; margin-top: 12px; }
+.master-description-text { font-size: 12px; line-height: 1.7; word-break: break-word; }
+.master-cumulative-preview.desktop-mode .master-description-text { font-size: 14px; line-height: 1.75; }
+.master-cumulative-preview.desktop-mode .master-accordion-button span { font-size: 16px; }
+.master-activity-popup { position: absolute; right: 12px; bottom: 14px; z-index: 30; width: min(280px, 100% - 24px); display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid rgba(0, 0, 0, 0.07); border-radius: 12px; background: rgba(255, 255, 255, 0.97); color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 28px; backdrop-filter: blur(10px); }
+.master-wa-badge { position: relative; flex: 0 0 auto; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgb(37, 211, 102); color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 12px; }
+.master-wa-badge svg { display: block; width: 25px; height: 25px; }
+.master-wa-check { position: absolute; right: -2px; bottom: -1px; width: 13px; height: 13px; display: flex; align-items: center; justify-content: center; border: 2px solid rgb(255, 255, 255); border-radius: 50%; background: rgb(47, 128, 237); color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 7px; font-weight: 800; line-height: 1; }
+.master-popup-copy { min-width: 0px; flex: 1 1 0%; }
+.master-popup-name { display: block; margin-bottom: 2px; color: rgb(24, 24, 24); font-size: 11px; font-weight: 800; line-height: 1.25; }
+.master-popup-copy p { margin: 0px; color: rgb(85, 85, 85); font-size: 9px; line-height: 1.4; }
+.master-popup-copy p b { color: rgb(34, 34, 34); font-weight: 700; }
+.master-popup-time { display: block; margin-top: 2px; color: rgb(150, 150, 150); font-size: 8px; line-height: 1.2; }
+.master-cumulative-preview.mobile-mode .master-activity-popup { right: 8px; bottom: 10px; width: min(245px, 100% - 16px); padding: 8px 10px; gap: 8px; border-radius: 10px; }
+.master-cumulative-preview.mobile-mode .master-wa-badge { width: 31px; height: 31px; }
+.master-cumulative-preview.mobile-mode .master-wa-badge svg { width: 22px; height: 22px; }
+.master-cumulative-preview.desktop-mode .master-activity-popup { right: 18px; bottom: 18px; width: 300px; padding: 12px 14px; }
+.master-cumulative-preview.desktop-mode .master-wa-badge { width: 40px; height: 40px; }
+.master-cumulative-preview.desktop-mode .master-wa-badge svg { width: 28px; height: 28px; }
+.master-cumulative-preview.desktop-mode .master-popup-name { font-size: 13px; }
+.master-cumulative-preview.desktop-mode .master-popup-copy p { font-size: 11px; }
+.master-cumulative-preview.desktop-mode .master-popup-time { font-size: 9px; }
+.master-variant-item { position: relative; appearance: none; width: 100%; display: flex; align-items: center; gap: 9px; padding: 10px 12px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 10px; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; transition: border-color 0.18s, background 0.18s, box-shadow 0.18s, transform 0.18s; }
+.master-variant-item:hover { border-color: rgba(0, 0, 0, 0.3); }
+.master-variant-item:active { transform: scale(0.985); }
+.master-variant-check { flex: 0 0 auto; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 50%; background: transparent; color: transparent; font-family: Arial, sans-serif; font-size: 10px; font-weight: 800; transition: background 0.18s, border-color 0.18s, color 0.18s; }
+.master-variant-label { min-width: 0px; flex: 1 1 0%; font-weight: 700; }
+.master-variant-price { flex: 0 0 auto; margin-left: auto; font-weight: 800; white-space: nowrap; }
+.master-variant-item.is-selected { border-color: currentcolor; background: rgba(0, 0, 0, 0.043); box-shadow: currentcolor 0px 0px 0px 1px inset; }
+.master-variant-item.is-selected .master-variant-check { border-color: currentcolor; background: currentcolor; color: rgb(255, 255, 255); }
+.template-social .master-variant-item.is-selected { border-color: rgb(223, 133, 136); background: rgba(223, 133, 136, 0.1); box-shadow: rgb(223, 133, 136) 0px 0px 0px 1px inset; }
+.template-social .master-variant-item.is-selected .master-variant-check { border-color: rgb(223, 133, 136); background: rgb(223, 133, 136); color: rgb(255, 255, 255); }
+.template-marketplace .master-variant-item.is-selected { border-color: rgb(238, 77, 45); background: rgba(238, 77, 45, 0.08); box-shadow: rgb(238, 77, 45) 0px 0px 0px 1px inset; }
+.template-marketplace .master-variant-item.is-selected .master-variant-check { border-color: rgb(238, 77, 45); background: rgb(238, 77, 45); color: rgb(255, 255, 255); }
+.template-premium .master-variant-item.is-selected { border-color: rgb(102, 84, 71); background: rgba(102, 84, 71, 0.08); box-shadow: rgb(102, 84, 71) 0px 0px 0px 1px inset; }
+.template-premium .master-variant-item.is-selected .master-variant-check { border-color: rgb(102, 84, 71); background: rgb(102, 84, 71); color: rgb(255, 255, 255); }
+.template-minimal .master-variant-item.is-selected { border-color: rgb(24, 24, 24); background: rgb(244, 244, 242); box-shadow: rgb(24, 24, 24) 0px 0px 0px 1px inset; }
+.template-minimal .master-variant-item.is-selected .master-variant-check { border-color: rgb(24, 24, 24); background: rgb(24, 24, 24); color: rgb(255, 255, 255); }
+.template-social .master-variant-item:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: transparent !important; box-shadow: none !important; }
+.template-social .master-variant-item:not(.is-selected) .master-variant-check { border-color: rgba(0, 0, 0, 0.2) !important; background: transparent !important; color: transparent !important; }
+.template-marketplace .master-variant-item:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: transparent !important; box-shadow: none !important; }
+.template-premium .master-variant-item:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: transparent !important; box-shadow: none !important; }
+.template-minimal .master-variant-item:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: transparent !important; box-shadow: none !important; }
+.master-variant-item:not(.is-selected), .master-variant-item:not(.is-selected) .master-variant-label, .master-variant-item:not(.is-selected) .master-variant-price, .master-variant-item:not(.is-selected) span, .master-variant-item:not(.is-selected) strong { color: inherit !important; }
+.template-social .master-variant-item:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: transparent !important; box-shadow: none !important; color: rgb(17, 17, 17) !important; }
+.template-marketplace .master-variant-item:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: transparent !important; box-shadow: none !important; color: rgb(17, 17, 17) !important; }
+.template-premium .master-variant-item:not(.is-selected) { background: transparent !important; box-shadow: none !important; }
+.template-minimal .master-variant-item:not(.is-selected) { background: transparent !important; box-shadow: none !important; color: rgb(24, 24, 24) !important; }
+.master-variants.has-variant-images .master-variant-list { display: flex; gap: 10px; width: 100%; overflow: auto hidden; padding: 2px 2px 10px; scroll-behavior: smooth; scrollbar-width: thin; }
+.master-variants.has-variant-images .master-variant-card { position: relative; flex: 0 0 118px; width: 118px; display: flex; flex-direction: column; align-items: stretch; gap: 0px; padding: 0px; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 8px; background: rgb(255, 255, 255); color: rgb(17, 17, 17); text-align: left; cursor: pointer; box-shadow: none; transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s; }
+.master-variants.has-variant-images .master-variant-card:hover { border-color: rgba(0, 0, 0, 0.28); }
+.master-variants.has-variant-images .master-variant-card:active { transform: scale(0.985); }
+.master-variant-card-image { width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; background: rgb(244, 244, 244); }
+.master-variant-card-image img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center center; }
+.master-variant-image-placeholder { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 8px; font-size: 8px; font-weight: 800; letter-spacing: 0.08em; text-align: center; color: rgba(0, 0, 0, 0.35) !important; }
+.master-variant-card-info { display: flex; flex-direction: column; gap: 3px; width: 100%; padding: 9px 8px 10px; color: rgb(17, 17, 17) !important; }
+.master-variant-card-name { display: block; overflow: hidden; font-size: 11px; font-weight: 800; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; color: rgb(17, 17, 17) !important; }
+.master-variant-card-size { display: block; font-size: 9px; line-height: 1.3; color: rgb(119, 119, 119) !important; }
+.master-variant-card-price { display: block; margin-top: 2px; font-size: 10px; font-weight: 800; line-height: 1.2; color: rgb(17, 17, 17) !important; }
+.master-variant-card-check { position: absolute; top: 6px; right: 6px; z-index: 3; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255, 255, 255, 0.92); font-size: 11px; font-weight: 900; opacity: 0; transform: scale(0.8); transition: opacity 0.18s, transform 0.18s; color: transparent !important; }
+.master-variant-card.is-selected .master-variant-card-check { opacity: 1; transform: scale(1); color: rgb(255, 255, 255) !important; }
+.template-social .master-variant-card.is-selected { border-color: rgb(223, 133, 136) !important; box-shadow: rgb(223, 133, 136) 0px 0px 0px 1px inset !important; background: rgb(255, 255, 255) !important; }
+.template-social .master-variant-card.is-selected .master-variant-card-check { background: rgb(223, 133, 136) !important; }
+.template-marketplace .master-variant-card.is-selected { border-color: rgb(238, 77, 45) !important; box-shadow: rgb(238, 77, 45) 0px 0px 0px 1px inset !important; background: rgb(255, 255, 255) !important; }
+.template-marketplace .master-variant-card.is-selected .master-variant-card-check { background: rgb(238, 77, 45) !important; }
+.template-premium .master-variant-card.is-selected { border-color: rgb(102, 84, 71) !important; box-shadow: rgb(102, 84, 71) 0px 0px 0px 1px inset !important; background: rgb(255, 255, 255) !important; }
+.template-premium .master-variant-card.is-selected .master-variant-card-check { background: rgb(102, 84, 71) !important; }
+.template-minimal .master-variant-card.is-selected { border-color: rgb(24, 24, 24) !important; box-shadow: rgb(24, 24, 24) 0px 0px 0px 1px inset !important; background: rgb(255, 255, 255) !important; }
+.template-minimal .master-variant-card.is-selected .master-variant-card-check { background: rgb(24, 24, 24) !important; }
+.master-variants.has-variant-images .master-variant-card:not(.is-selected) { border-color: rgba(0, 0, 0, 0.12) !important; background: rgb(255, 255, 255) !important; box-shadow: none !important; }
+.master-variants.has-variant-images .master-variant-card:not(.is-selected) .master-variant-card-name, .master-variants.has-variant-images .master-variant-card:not(.is-selected) .master-variant-card-price { color: rgb(17, 17, 17) !important; }
+.master-cumulative-preview .master-variants.has-variant-images .master-variant-list.visual-variant-list { scroll-snap-type: x; overscroll-behavior-x: contain; scrollbar-width: none; display: flex !important; flex-flow: row !important; align-items: stretch !important; justify-content: flex-start !important; gap: 10px !important; width: 100% !important; max-width: 100% !important; overflow: auto hidden !important; padding: 4px 2px 10px !important; }
+.master-cumulative-preview .visual-variant-list::-webkit-scrollbar { display: none; }
+.master-cumulative-preview .visual-variant-list .master-variant-card { scroll-snap-align: start; flex: 0 0 118px !important; width: 118px !important; min-width: 118px !important; max-width: 118px !important; display: flex !important; flex-direction: column !important; align-items: stretch !important; margin: 0px !important; transform: none !important; opacity: 1 !important; }
+.master-cumulative-preview .master-variant-card-info { display: flex !important; flex-direction: column !important; align-items: flex-start !important; gap: 4px !important; width: 100% !important; padding: 9px !important; background: rgb(255, 255, 255) !important; text-align: left !important; }
+.master-cumulative-preview .master-variant-card-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block !important; width: 100% !important; margin: 0px !important; color: rgb(22, 22, 22) !important; font-size: 10px !important; font-weight: 800 !important; line-height: 1.25 !important; }
+.master-cumulative-preview .master-variant-card-price { display: block !important; width: 100% !important; margin: 0px !important; font-size: 11px !important; font-weight: 800 !important; line-height: 1.25 !important; }
+.master-variant-modal { position: fixed; inset: 0px; z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 20px; pointer-events: none; opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; }
+.master-variant-modal.is-open { pointer-events: auto; opacity: 1; visibility: visible; }
+.master-variant-modal-backdrop { position: absolute; inset: 0px; background: rgba(0, 0, 0, 0.58); backdrop-filter: blur(3px); }
+.master-variant-modal-card { position: relative; z-index: 1; width: min(320px, 92vw); overflow: hidden; border-radius: 14px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px; transform: translateY(8px) scale(0.97); transition: transform 0.2s; }
+.master-variant-modal.is-open .master-variant-modal-card { transform: translateY(0px) scale(1); }
+.master-variant-modal-close { position: absolute; top: 10px; right: 10px; z-index: 5; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; padding: 0px; border: 0px; border-radius: 50%; background: rgba(255, 255, 255, 0.94); color: rgb(17, 17, 17); font-size: 21px; line-height: 1; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 12px; }
+.master-variant-modal-image { width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; background: rgb(245, 245, 245); }
+.master-variant-modal-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.master-variant-modal-image.is-empty { min-height: 180px; }
+.master-variant-modal-info { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; padding: 15px 16px 17px; background: rgb(255, 255, 255); }
+.master-variant-modal-name { color: rgb(21, 21, 21); font-size: 16px; font-weight: 800; line-height: 1.25; }
+.master-variant-modal-price { color: rgb(223, 133, 136); font-size: 15px; font-weight: 800; line-height: 1.3; }
+.master-variant-modal-selected { margin-top: 7px; padding: 6px 9px; border-radius: 6px; background: rgba(223, 133, 136, 0.12); color: rgb(207, 110, 115); font-size: 9px; font-weight: 900; letter-spacing: 0.04em; }
+.master-cumulative-preview .visual-variant-list .master-variant-card { flex: 0 0 92px !important; width: 92px !important; min-width: 92px !important; max-width: 92px !important; }
+.master-cumulative-preview .master-variants.has-variant-images .master-variant-list.visual-variant-list { gap: 7px !important; }
+.master-cumulative-preview .master-variant-card-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block !important; width: 100% !important; margin: 0px !important; padding: 6px 5px 0px !important; color: rgb(24, 24, 24) !important; font-size: 9px !important; font-weight: 800 !important; line-height: 1.2 !important; text-align: center !important; }
+.master-cumulative-preview .master-variant-card-price { display: block !important; width: 100% !important; margin: 0px !important; padding: 3px 5px 6px !important; font-size: 9px !important; font-weight: 800 !important; line-height: 1.2 !important; text-align: center !important; }
+.master-cumulative-preview .master-variant-card-name:last-child { padding-bottom: 6px !important; }
+.master-cumulative-preview .master-variant-card-check { top: 5px !important; right: 5px !important; width: 17px !important; height: 17px !important; font-size: 9px !important; }
+.master-cumulative-preview .master-selected-variant-summary { margin: 12px 12px 14px; padding: 12px 13px; display: none; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 10px; background: rgba(0, 0, 0, 0.024); }
+.master-cumulative-preview .master-selected-variant-summary.is-visible { display: block; }
+.master-cumulative-preview .master-selected-variant-label { margin-bottom: 7px; color: rgb(119, 119, 119); font-size: 9px; font-weight: 700; line-height: 1.2; text-transform: uppercase; letter-spacing: 0.5px; }
+.master-cumulative-preview .master-selected-variant-content { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.master-cumulative-preview .master-selected-variant-name { min-width: 0px; color: rgb(23, 23, 23); font-size: 11px; font-weight: 800; line-height: 1.3; }
+.master-cumulative-preview .master-selected-variant-price { flex-shrink: 0; color: rgb(23, 23, 23); font-size: 11px; font-weight: 800; line-height: 1.3; }
+.builder-content .preview-area .master-cumulative-preview { overscroll-behavior: contain; scrollbar-width: thin; flex: 1 1 auto !important; min-height: 0px !important; max-height: calc(-135px + 100vh) !important; overflow: auto !important; }
+.builder-content .preview-area .master-cumulative-preview::-webkit-scrollbar { width: 7px; height: 7px; }
+.builder-content .preview-area .master-cumulative-preview::-webkit-scrollbar-track { background: transparent; }
+.builder-content .preview-area .master-cumulative-preview::-webkit-scrollbar-thumb { background: rgba(125, 145, 175, 0.28); border-radius: 999px; }
+.builder-content .preview-area .master-cumulative-preview::-webkit-scrollbar-thumb:hover { background: rgba(125, 145, 175, 0.46); }
+@media (max-width: 900px) {
+.builder-content .preview-area .master-cumulative-preview { max-height: none !important; overflow-y: visible !important; }
+}
+.master-cumulative-preview .master-orderonline-section { margin: 12px; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 12px; background: rgb(255, 255, 255); }
+.master-cumulative-preview .master-orderonline-frame { display: block; width: 100%; min-height: 650px; border: 0px; background: rgb(255, 255, 255); }
+
+
+/* MODE PUBLIKASI */
+
+body {
+    background: #ffffff !important;
+}
+
+.aspage-public.master-cumulative-preview {
+    display: block !important;
+    width: 100% !important;
+    max-width: 720px !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+.aspage-public .master-preview-device {
+    display: block !important;
+    width: 100% !important;
+    max-width: 720px !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+.aspage-public .master-preview-page {
+    width: 100%;
+    min-height: 0;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.aspage-public .master-preview-browser {
+    display: none !important;
+}
+
+.aspage-public .master-activity-popup {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+.aspage-public .master-activity-popup.popup-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.aspage-public .master-orderonline-section {
+    max-width: 100%;
+    overflow: visible;
+}
+
+.aspage-public .master-orderonline-section form {
+    max-width: 100%;
+}
+
+@media (max-width: 720px) {
+
+    .aspage-public.master-cumulative-preview,
+    .aspage-public .master-preview-device {
+        width: 100% !important;
+    }
+
+}
+
+</style>
+</head>
+<body>
+<main class="master-cumulative-preview aspage-public">
+<div class="
+                master-preview-device
+                template-minimal
+            ">
+
+            
+
+
+            <div class="master-preview-page">
+
+
+            <section class="
+                    master-hero
+                    single-image
+                " data-hero-count="1">
+
+                <div class="master-hero-track">
+
+                    
+                                    <div class="
+                                            master-hero-slide
+                                            active
+                                        " data-hero-index="0">
+
+                                        <img src="https://cdn.orderonline.id/uploads/images_8642461791544762848.png" alt="Women's Sling Bag" draggable="false">
+
+                                    </div>
+                                
+
+                </div>
+
+
+                
+
+            </section>
+          
+
+
+        <section class="
+                master-promo-timer
+                has-both
+            ">
+
+            
+                        <div class="
+                                master-promo-timer-promo
+                            ">
+                            
+                <div class="master-promo-card">
+
+                    
+                                <span class="master-promo-badge">
+                                    LIMITED OFFER
+                                </span>
+                              
+
+                    <div>
+
+                        
+                                    <strong>
+                                        PENAWARAN TERBATAS
+                                    </strong>
+                                  
+
+                        
+                                    <p>
+                                        Harga spesial tersedia dalam waktu terbatas
+                                    </p>
+                                  
+
+                    </div>
+
+                </div>
+              
+                        </div>
+                      
+
+
+            
+                        <div class="
+                                master-promo-timer-countdown
+                            ">
+                            
+                <section class="master-timer">
+
+                    <span>
+                        PROMO AKAN BERAKHIR
+                    </span>
+
+                    <strong class="master-countdown-value">
+                        00 : 00 : 00
+                    </strong>
+
+                </section>
+              
+                        </div>
+                      
+
+        </section>
+    
+
+
+        <section class="master-product-main">
+
+            
+                <section class="master-price-block">
+
+                    
+                                <del>
+                                    Rp450.000
+                                </del>
+                              
+
+                    
+                                <div class="master-price-row">
+
+                                    <strong>
+                                        Rp219.000
+                                    </strong>
+
+                                    
+                                                <span>
+                                                    HEMAT 51%
+                                                </span>
+                                              
+
+                                </div>
+                              
+
+
+                </section>
+              
+
+            <h2>
+                Women's Sling Bag
+            </h2>
+
+        </section>
+    
+
+
+        <section class="master-store">
+
+            <div class="master-store-logo">
+
+                
+                            <img src="https://cdn.orderonline.id/uploads/images_4517091791516501828.png" alt="AS Collection Official Shop">
+                          
+
+            </div>
+
+
+            <div class="master-store-info">
+
+                <small>
+                    TOKO
+                </small>
+
+                <strong>
+                    AS Collection Official Shop
+                </strong>
+
+            </div>
+
+        </section>
+    
+
+
+            <section class="
+                    master-section
+                    master-variants
+                    has-variant-images
+                ">
+
+                <div class="master-section-title">
+                    Pilihan Varian
+                </div>
+
+
+                <div class="
+                        master-variant-list
+                        visual-variant-list
+                    ">
+
+                    
+                                            <button class="
+                                                    master-variant-item
+                                                    master-variant-card
+                                                    
+                                                " type="button" data-master-variant-index="0" data-variant-name="BLACK" data-variant-image="https://down-id.img.susercontent.com/file/a10edd007f68035456e582640372c5db@resize_w450_nl.webp" data-variant-price="" aria-pressed="false">
+
+                                                <span class="
+                                                        master-variant-card-check
+                                                    " aria-hidden="true">
+                                                    ✓
+                                                </span>
+
+
+                                                <span class="
+                                                        master-variant-card-image
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/a10edd007f68035456e582640372c5db@resize_w450_nl.webp" alt="Black" loading="lazy">
+                                                              
+
+                                                </span>
+
+
+                                                <strong class="
+        master-variant-card-name
+    ">
+    BLACK
+</strong>
+
+
+
+
+                                                
+
+                                            </button>
+                                        
+                                            <button class="
+                                                    master-variant-item
+                                                    master-variant-card
+                                                    
+                                                " type="button" data-master-variant-index="1" data-variant-name="GREY" data-variant-image="https://down-id.img.susercontent.com/file/28a5cfdb1c574480a559aea4daa31d61@resize_w450_nl.webp" data-variant-price="" aria-pressed="false">
+
+                                                <span class="
+                                                        master-variant-card-check
+                                                    " aria-hidden="true">
+                                                    ✓
+                                                </span>
+
+
+                                                <span class="
+                                                        master-variant-card-image
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/28a5cfdb1c574480a559aea4daa31d61@resize_w450_nl.webp" alt="Grey" loading="lazy">
+                                                              
+
+                                                </span>
+
+
+                                                <strong class="
+        master-variant-card-name
+    ">
+    GREY
+</strong>
+
+
+
+
+                                                
+
+                                            </button>
+                                        
+                                            <button class="
+                                                    master-variant-item
+                                                    master-variant-card
+                                                    
+                                                " type="button" data-master-variant-index="2" data-variant-name="BROWN" data-variant-image="https://down-id.img.susercontent.com/file/fbd19ed1d98d98df442c77b69c64c786@resize_w450_nl.webp" data-variant-price="" aria-pressed="false">
+
+                                                <span class="
+                                                        master-variant-card-check
+                                                    " aria-hidden="true">
+                                                    ✓
+                                                </span>
+
+
+                                                <span class="
+                                                        master-variant-card-image
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/fbd19ed1d98d98df442c77b69c64c786@resize_w450_nl.webp" alt="Brown" loading="lazy">
+                                                              
+
+                                                </span>
+
+
+                                                <strong class="
+        master-variant-card-name
+    ">
+    BROWN
+</strong>
+
+
+
+
+                                                
+
+                                            </button>
+                                        
+                                            <button class="
+                                                    master-variant-item
+                                                    master-variant-card
+                                                    
+                                                " type="button" data-master-variant-index="3" data-variant-name="PINK" data-variant-image="https://down-id.img.susercontent.com/file/7cbd20697e78b235acc17e564565bafd@resize_w450_nl.webp" data-variant-price="" aria-pressed="false">
+
+                                                <span class="
+                                                        master-variant-card-check
+                                                    " aria-hidden="true">
+                                                    ✓
+                                                </span>
+
+
+                                                <span class="
+                                                        master-variant-card-image
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/7cbd20697e78b235acc17e564565bafd@resize_w450_nl.webp" alt="Pink" loading="lazy">
+                                                              
+
+                                                </span>
+
+
+                                                <strong class="
+        master-variant-card-name
+    ">
+    PINK
+</strong>
+
+
+
+
+                                                
+
+                                            </button>
+                                        
+                                            <button class="
+                                                    master-variant-item
+                                                    master-variant-card
+                                                    
+                                                " type="button" data-master-variant-index="4" data-variant-name="LEMON" data-variant-image="https://down-id.img.susercontent.com/file/ef74f680b2a772f8b7c28be13bc67e34@resize_w450_nl.webp" data-variant-price="" aria-pressed="false">
+
+                                                <span class="
+                                                        master-variant-card-check
+                                                    " aria-hidden="true">
+                                                    ✓
+                                                </span>
+
+
+                                                <span class="
+                                                        master-variant-card-image
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/ef74f680b2a772f8b7c28be13bc67e34@resize_w450_nl.webp" alt="Lemon" loading="lazy">
+                                                              
+
+                                                </span>
+
+
+                                                <strong class="
+        master-variant-card-name
+    ">
+    LEMON
+</strong>
+
+
+
+
+                                                
+
+                                            </button>
+                                        
+                                            <button class="
+                                                    master-variant-item
+                                                    master-variant-card
+                                                    
+                                                " type="button" data-master-variant-index="5" data-variant-name="GREEN" data-variant-image="https://down-id.img.susercontent.com/file/f544878cc87126475cb7da44fc6fa97b@resize_w450_nl.webp" data-variant-price="" aria-pressed="false">
+
+                                                <span class="
+                                                        master-variant-card-check
+                                                    " aria-hidden="true">
+                                                    ✓
+                                                </span>
+
+
+                                                <span class="
+                                                        master-variant-card-image
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/f544878cc87126475cb7da44fc6fa97b@resize_w450_nl.webp" alt="Green" loading="lazy">
+                                                              
+
+                                                </span>
+
+
+                                                <strong class="
+        master-variant-card-name
+    ">
+    GREEN
+</strong>
+
+
+
+
+                                                
+
+                                            </button>
+                                        
+
+                </div>
+
+            </section>
+          
+
+
+        <section class="
+                master-description
+                
+            ">
+
+            <button class="master-accordion-button" type="button">
+
+                <span>
+                    Deskripsi Produk
+                </span>
+
+                <b>
+                    ⌄
+                </b>
+
+            </button>
+
+
+            <div class="master-accordion-content">
+
+                <div class="master-description-text">
+                    &gt; bahan kulit pu sintetis<br>&gt; dalaman memiliki 3 sekatan / ruang<br>&gt; model touchsreen <br>&gt; 3 sekatan utama + ( 6 slot kartu ) <br>&gt; bisa untuk menyimpan uang kertas / koin )<br>&gt; muat HP 6.5 Inci<br>&gt; dapat tali panjang bisa di adjust panjang pendek<br>&gt; tali bisa di lepas<br>&gt; size P12x T19 x L5
+                </div>
+
+            </div>
+
+        </section>
+    
+
+
+                <section class="master-content-list">
+
+                    
+                                    <article class="
+                                            master-content-item
+                                            
+                                        ">
+
+                                        
+                                                    <img src="https://cdn.orderonline.id/uploads/images_4826191791544226472.png" alt="💗Tampil Cantik, Praktis &amp; Stylish Setiap Hari">
+                                                  
+
+                                        
+                                                    <div class="
+                                                            master-content-copy
+                                                        ">
+
+                                                        
+                                                                    <h4>
+                                                                        💗Tampil Cantik, Praktis &amp; Stylish Setiap Hari
+                                                                    </h4>
+                                                                  
+
+                                                        
+                                                                    <div class="
+                                                                            master-content-description
+                                                                        ">
+                                                                        Sempurnakan penampilanmu dengan Women's Sling Bag, tas selempang wanita berdesain minimalis dan elegan dengan warna dusty pink yang feminin.
+                                                                    </div>
+                                                                  
+
+                                                    </div>
+                                                  
+
+                                    </article>
+                                
+                                    <article class="
+                                            master-content-item
+                                            
+                                        ">
+
+                                        
+                                                    <img src="https://cdn.orderonline.id/uploads/images_1885891791544213271.png" alt="✨ Multi Compartment">
+                                                  
+
+                                        
+                                                    <div class="
+                                                            master-content-copy
+                                                        ">
+
+                                                        
+                                                                    <h4>
+                                                                        ✨ Multi Compartment
+                                                                    </h4>
+                                                                  
+
+                                                        
+                                                                    <div class="
+                                                                            master-content-description
+                                                                        ">
+                                                                        Bukan sekadar tas cantik, tas ini juga dirancang untuk membantu menyimpan barang-barang penting agar lebih rapi dan mudah dibawa ke mana saja.
+                                                                    </div>
+                                                                  
+
+                                                    </div>
+                                                  
+
+                                    </article>
+                                
+                                    <article class="
+                                            master-content-item
+                                            
+                                        ">
+
+                                        
+                                                    <img src="https://cdn.orderonline.id/uploads/images_9323841791544588914.png" alt="📱 Touchscreen Phone Pocket">
+                                                  
+
+                                        
+                                                    <div class="
+                                                            master-content-copy
+                                                        ">
+
+                                                        
+                                                                    <h4>
+                                                                        📱 Touchscreen Phone Pocket
+                                                                    </h4>
+                                                                  
+
+                                                        
+                                                                    <div class="
+                                                                            master-content-description
+                                                                        ">
+                                                                        Dilengkapi kompartemen HP dengan jendela transparan untuk memudahkan penggunaan layar tanpa mengeluarkan ponsel.
+                                                                    </div>
+                                                                  
+
+                                                    </div>
+                                                  
+
+                                    </article>
+                                
+                                    <article class="
+                                            master-content-item
+                                            no-copy
+                                        ">
+
+                                        
+                                                    <img src="https://cdn.orderonline.id/uploads/images_5329851791544733150.png" alt="Women's Sling Bag">
+                                                  
+
+                                        
+
+                                    </article>
+                                
+
+                </section>
+              
+
+
+            <section class="
+                    master-section
+                    master-reviews
+                ">
+
+                <div class="master-review-heading">
+
+                    <span>
+                        CUSTOMER REVIEWS
+                    </span>
+
+                    <h3>
+                        Ulasan Pembeli
+                    </h3>
+
+
+                    <div class="master-review-summary">
+
+                        <strong>
+                            4.8
+                        </strong>
+
+                        <div>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                3.479
+                                Ulasan
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="master-review-list">
+
+                    
+                                        <article class="
+                                                master-review-item
+                                            ">
+
+                                            <div class="
+                                                    master-review-user
+                                                ">
+
+                                                <div class="
+                                                        master-avatar
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98r-lomjlmdseof7fb_tn" alt="ini_chila">
+                                                              
+
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        ini_chila
+                                                    </strong>
+
+                                                    <span>
+                                                        ★★★★★
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            
+                                                        <div class="
+                                                                master-review-text
+                                                            ">
+                                                            Recomended bgt ini siih...serius..dijamin tidak mngecewakan...cucok meong😍
+                                                        </div>
+                                                      
+
+
+                                            
+                                                        <div class="
+                                                                master-review-photos
+                                                            ">
+
+                                                            
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-22110-y5dgun3i4pjv51.webp" alt="Foto ulasan">
+                                                                        
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-22110-cq33cqmj4pjv9f.webp" alt="Foto ulasan">
+                                                                        
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-22110-68emzn4k4pjva8.webp" alt="Foto ulasan">
+                                                                        
+
+                                                        </div>
+                                                      
+
+                                        </article>
+                                    
+                                        <article class="
+                                                master-review-item
+                                            ">
+
+                                            <div class="
+                                                    master-review-user
+                                                ">
+
+                                                <div class="
+                                                        master-avatar
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/c6b5bdd8b88ab32f89c44d28a9427880_tn" alt="hadiatulmunawarah534">
+                                                              
+
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        hadiatulmunawarah534
+                                                    </strong>
+
+                                                    <span>
+                                                        ★★★★★
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            
+                                                        <div class="
+                                                                master-review-text
+                                                            ">
+                                                            kualitas okee<br>beliin buat ibuu, beliau suka banget<br>seller mantappbb<br>recommended boss 👍👍👍
+                                                        </div>
+                                                      
+
+
+                                            
+                                                        <div class="
+                                                                master-review-photos
+                                                            ">
+
+                                                            
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-22090-5vxk60acj4gv5f.webp" alt="Foto ulasan">
+                                                                        
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-22090-7md3f6icj4gv55.webp" alt="Foto ulasan">
+                                                                        
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-22090-03pyx8icj4gv5c.webp" alt="Foto ulasan">
+                                                                        
+
+                                                        </div>
+                                                      
+
+                                        </article>
+                                    
+                                        <article class="
+                                                master-review-item
+                                            ">
+
+                                            <div class="
+                                                    master-review-user
+                                                ">
+
+                                                <div class="
+                                                        master-avatar
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98s-lml6u1yfttvye3_tn" alt="minahlutminati">
+                                                              
+
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        minahlutminati
+                                                    </strong>
+
+                                                    <span>
+                                                        ★★★★★
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            
+                                                        <div class="
+                                                                master-review-text
+                                                            ">
+                                                            Recommended yaaa<br>Next beli lagi warna lain ♥️♥️
+                                                        </div>
+                                                      
+
+
+                                            
+                                                        <div class="
+                                                                master-review-photos
+                                                            ">
+
+                                                            
+                                                                            <img src="https://down-id.img.susercontent.com/file/id-11134103-7r991-lvxe2sil48wu05.webp" alt="Foto ulasan">
+                                                                        
+
+                                                        </div>
+                                                      
+
+                                        </article>
+                                    
+                                        <article class="
+                                                master-review-item
+                                            ">
+
+                                            <div class="
+                                                    master-review-user
+                                                ">
+
+                                                <div class="
+                                                        master-avatar
+                                                    ">
+
+                                                    
+                                                                <img src="https://down-id.img.susercontent.com/file/id-11134233-7rase-m33fvfoyq2fh45_tn" alt="eliayasopa665">
+                                                              
+
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        eliayasopa665
+                                                    </strong>
+
+                                                    <span>
+                                                        ★★★★☆
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            
+                                                        <div class="
+                                                                master-review-text
+                                                            ">
+                                                            Ini amaan bgtt rapi juga mana ga mahal" amat warnanya juga nggak norak, banyak fungsinyaa, buat kado ke tmn juga baguss worth it bgtt SUKAAKK-!!! 🤭<br>Wajib bgt di beli.
+                                                        </div>
+                                                      
+
+
+                                            
+                                                        <div class="
+                                                                master-review-photos
+                                                            ">
+
+                                                            
+                                                                            <img src="https://down-id.img.susercontent.com/file/9e4b813199ae37329714021c3787ae5f.webp" alt="Foto ulasan">
+                                                                        
+                                                                            <img src="https://down-id.img.susercontent.com/file/4e1b6330ae4feab8fb79f94ee2576cf1.webp" alt="Foto ulasan">
+                                                                        
+
+                                                        </div>
+                                                      
+
+                                        </article>
+                                    
+
+                </div>
+
+            </section>
+        
+
+
+
+
+                <section class="
+                        master-orderonline-section
+                    ">
+                    <!-- OrderOnline Embed Code - v8.0.2 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="vera" data-product-slug="womens-sling-bag" data-product-id="6ac8c2241f2b26756c045868" id="oo-embed-form-womens-sling-bag-250" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://vera.orderonline.id'); ooe('init', '5f1a7807a9bf807d6c63d963', '6ac8c2241f2b26756c045868', '6ac8c2241f2b26756c045869', 'oo-embed-form-womens-sling-bag-250', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+                </section>
+              
+
+
+    <div class="master-variant-modal" aria-hidden="true">
+
+        <div class="master-variant-modal-backdrop"></div>
+
+
+        <div class="master-variant-modal-card" role="dialog" aria-modal="true">
+
+            <button class="master-variant-modal-close" type="button" aria-label="Tutup">
+                ×
+            </button>
+
+
+            <div class="master-variant-modal-image">
+
+                <img src="" alt="">
+
+            </div>
+
+
+            <div class="master-variant-modal-info">
+
+                <strong class="master-variant-modal-name">
+                </strong>
+
+
+                <span class="master-variant-modal-price">
+                </span>
+
+
+                <div class="master-variant-modal-selected">
+                    ✓ VARIAN DIPILIH
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+            </div>
+
+
+            
+            <div class="master-activity-popup">
+
+                <div class="master-wa-badge" aria-hidden="true">
+
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="
+                                M16.02 3
+                                C8.84 3 3 8.74 3 15.8
+                                c0 2.26.6 4.46 1.75 6.4
+                                L3 28.6
+                                l6.62-1.7
+                                a13.2 13.2 0 0 0 6.4 1.62
+                                C23.2 28.52 29 22.78 29 15.8
+                                S23.2 3 16.02 3
+                                Z
+                                m0 23.35
+                                c-1.96 0-3.88-.52-5.55-1.5
+                                l-.4-.24
+                                -3.93 1.01
+                                1.04-3.77
+                                -.26-.4
+                                a10.55 10.55 0 0 1-1.67-5.65
+                                c0-5.87 4.84-10.64 10.79-10.64
+                                5.94 0 10.76 4.77 10.76 10.64
+                                0 5.82-4.82 10.55-10.76 10.55
+                                Z
+                            "></path>
+
+                        <path fill="#ffffff" d="
+                                M22.35 18.65
+                                c-.35-.17-2.06-1-2.38-1.12
+                                -.32-.11-.55-.17-.78.17
+                                -.23.35-.9 1.12-1.1 1.35
+                                -.2.23-.4.26-.75.09
+                                -.35-.17-1.47-.54-2.8-1.72
+                                -1.04-.91-1.74-2.04-1.94-2.39
+                                -.2-.34-.02-.53.15-.7
+                                .16-.15.35-.4.52-.6
+                                .17-.2.23-.35.35-.58
+                                .11-.23.06-.43-.03-.6
+                                -.09-.17-.78-1.85-1.07-2.53
+                                -.28-.67-.57-.58-.78-.59
+                                h-.67
+                                c-.23 0-.6.09-.92.43
+                                -.32.35-1.21 1.18-1.21 2.87
+                                0 1.69 1.24 3.32 1.41 3.55
+                                .17.23 2.43 3.67 5.9 5.15
+                                .82.35 1.47.56 1.97.72
+                                .83.26 1.58.22 2.18.13
+                                .66-.1 2.06-.83 2.35-1.63
+                                .29-.8.29-1.49.2-1.63
+                                -.08-.14-.31-.22-.66-.39
+                                Z
+                            "></path>
+
+                    </svg>
+
+
+                    <span class="master-wa-check">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <div class="master-popup-copy">
+
+                    <strong class="master-popup-name">
+                        Bayu Maharani
+                    </strong>
+
+
+                    <p>
+                        Baru Saja Memesan
+                        <b>
+                            Women's Sling Bag
+                        </b>
+                    </p>
+
+
+                    <time class="master-popup-time">
+                        18:36:37
+                    </time>
+
+                </div>
+
+            </div>
+          
+
+        </div>
+</main>
+<script>
+
+(function () {
+
+    "use strict";
+
+    const data = {"variants":[{"name":"BLACK","price":0,"image":"https://down-id.img.susercontent.com/file/a10edd007f68035456e582640372c5db@resize_w450_nl.webp"},{"name":"GREY","price":0,"image":"https://down-id.img.susercontent.com/file/28a5cfdb1c574480a559aea4daa31d61@resize_w450_nl.webp"},{"name":"BROWN","price":0,"image":"https://down-id.img.susercontent.com/file/fbd19ed1d98d98df442c77b69c64c786@resize_w450_nl.webp"},{"name":"PINK","price":0,"image":"https://down-id.img.susercontent.com/file/7cbd20697e78b235acc17e564565bafd@resize_w450_nl.webp"},{"name":"LEMON","price":0,"image":"https://down-id.img.susercontent.com/file/ef74f680b2a772f8b7c28be13bc67e34@resize_w450_nl.webp"},{"name":"GREEN","price":0,"image":"https://down-id.img.susercontent.com/file/f544878cc87126475cb7da44fc6fa97b@resize_w450_nl.webp"}],"basePrice":219000,"hour":19,"minute":0,"popupName":"Bayu Maharani"};
+
+    const root = document.querySelector(".aspage-public");
+
+    if (!root) return;
+
+    const rupiah = value =>
+        value
+            ? "Rp" + Number(value).toLocaleString("id-ID")
+            : "";
+
+
+    /* HERO SLIDER */
+
+    root.querySelectorAll(".master-hero.has-slider")
+        .forEach(hero => {
+
+            const slides = Array.from(
+                hero.querySelectorAll(".master-hero-slide")
+            );
+
+            const dots = Array.from(
+                hero.querySelectorAll(".master-hero-dot")
+            );
+
+            if (slides.length < 2) return;
+
+            let index = 0;
+            let startX = null;
+
+            function show(next) {
+
+                index = (next + slides.length) % slides.length;
+
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle(
+                        "active",
+                        i === index
+                    );
+                });
+
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle(
+                        "active",
+                        i === index
+                    );
+                });
+
+            }
+
+            hero.querySelector(".master-hero-prev")
+                ?.addEventListener("click", () => show(index - 1));
+
+            hero.querySelector(".master-hero-next")
+                ?.addEventListener("click", () => show(index + 1));
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => show(i));
+            });
+
+            hero.addEventListener("touchstart", event => {
+                startX = event.changedTouches[0]?.screenX ?? null;
+            }, { passive: true });
+
+            hero.addEventListener("touchend", event => {
+
+                if (startX === null) return;
+
+                const end =
+                    event.changedTouches[0]?.screenX ?? startX;
+
+                if (Math.abs(end - startX) > 45) {
+                    show(index + (end < startX ? 1 : -1));
+                }
+
+                startX = null;
+
+            }, { passive: true });
+
+            show(0);
+
+            setInterval(() => {
+                if (!document.hidden) show(index + 1);
+            }, 4000);
+
+        });
+
+
+    /* DESCRIPTION ACCORDION */
+
+    root.addEventListener("click", event => {
+
+        const button = event.target.closest(
+            ".master-accordion-button"
+        );
+
+        if (!button) return;
+
+        const section = button.closest(
+            ".master-description"
+        );
+
+        if (!section) return;
+
+        const open = section.classList.toggle("is-open");
+
+        button.setAttribute(
+            "aria-expanded",
+            String(open)
+        );
+
+    });
+
+
+    /* VARIANT + QUICK VIEW */
+
+    const priceBlock = root.querySelector(
+        ".master-price-block"
+    );
+
+    const defaultPriceHtml =
+        priceBlock?.innerHTML || "";
+
+    const modal = root.querySelector(
+        ".master-variant-modal"
+    );
+
+    root.addEventListener("click", event => {
+
+        const close = event.target.closest(
+            ".master-variant-modal-close, .master-variant-modal-backdrop"
+        );
+
+        if (close && modal) {
+
+            modal.classList.remove("is-open");
+
+            modal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            return;
+
+        }
+
+        const button = event.target.closest(
+            ".master-variant-item"
+        );
+
+        if (!button) return;
+
+        const index = Number(
+            button.dataset.masterVariantIndex
+        );
+
+        const item = data.variants[index];
+
+        if (!item) return;
+
+        root.querySelectorAll(".master-variant-item")
+            .forEach(node => {
+
+                const selected = node === button;
+
+                node.classList.toggle(
+                    "is-selected",
+                    selected
+                );
+
+                node.setAttribute(
+                    "aria-pressed",
+                    String(selected)
+                );
+
+            });
+
+        if (priceBlock) {
+
+            priceBlock.innerHTML = item.price
+                ? '<div class="master-price-row"><strong>' +
+                    rupiah(item.price) +
+                    '</strong></div>'
+                : defaultPriceHtml;
+
+        }
+
+        let summary = root.querySelector(
+            ".master-selected-variant-summary"
+        );
+
+        if (!summary) {
+
+            summary = document.createElement("section");
+
+            summary.className =
+                "master-selected-variant-summary is-visible";
+
+            const order = root.querySelector(
+                ".master-orderonline-section"
+            );
+
+            const reviews = root.querySelector(
+                ".master-reviews"
+            );
+
+            if (order) {
+                order.before(summary);
+            } else if (reviews) {
+                reviews.after(summary);
+            } else {
+                root.querySelector(".master-preview-page")
+                    ?.append(summary);
+            }
+
+        }
+
+        summary.replaceChildren();
+
+        const label = document.createElement("div");
+
+        label.className = "master-selected-variant-label";
+
+        label.textContent = "Varian dipilih";
+
+        const content = document.createElement("div");
+
+        content.className = "master-selected-variant-content";
+
+        const name = document.createElement("strong");
+
+        name.className = "master-selected-variant-name";
+
+        name.textContent = item.name;
+
+        content.append(name);
+
+        if (item.price) {
+
+            const shown = document.createElement("span");
+
+            shown.className = "master-selected-variant-price";
+
+            shown.textContent = rupiah(item.price);
+
+            content.append(shown);
+
+        }
+
+        summary.append(label, content);
+
+        summary.classList.add("is-visible");
+
+        if (
+            modal &&
+            button.classList.contains("master-variant-card")
+        ) {
+
+            const image = modal.querySelector(
+                ".master-variant-modal-image img"
+            );
+
+            const nameEl = modal.querySelector(
+                ".master-variant-modal-name"
+            );
+
+            const priceEl = modal.querySelector(
+                ".master-variant-modal-price"
+            );
+
+            if (nameEl) {
+                nameEl.textContent = item.name;
+            }
+
+            if (priceEl) {
+                priceEl.textContent = item.price
+                    ? rupiah(item.price)
+                    : rupiah(data.basePrice);
+            }
+
+            if (image) {
+
+                if (item.image) {
+                    image.src = item.image;
+                } else {
+                    image.removeAttribute("src");
+                }
+
+                image.alt = item.name;
+
+                image.parentElement?.classList.toggle(
+                    "is-empty",
+                    !item.image
+                );
+
+            }
+
+            modal.classList.add("is-open");
+
+            modal.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+        }
+
+    });
+
+
+    /* COUNTDOWN */
+
+    const clock = root.querySelector(
+        ".master-countdown-value"
+    );
+
+    if (clock) {
+
+        function updateClock() {
+
+            const now = new Date();
+
+            const target = new Date(now);
+
+            target.setHours(
+                data.hour,
+                data.minute,
+                0,
+                0
+            );
+
+            if (target <= now) {
+                target.setDate(target.getDate() + 1);
+            }
+
+            const seconds = Math.floor(
+                (target - now) / 1000
+            );
+
+            const hh = String(
+                Math.floor(seconds / 3600)
+            ).padStart(2, "0");
+
+            const mm = String(
+                Math.floor((seconds % 3600) / 60)
+            ).padStart(2, "0");
+
+            const ss = String(
+                seconds % 60
+            ).padStart(2, "0");
+
+            clock.textContent =
+                hh + " : " + mm + " : " + ss;
+
+        }
+
+        updateClock();
+
+        setInterval(updateClock, 1000);
+
+    }
+
+
+    /* ACTIVITY POPUP — SIMULASI */
+
+    const popup = root.querySelector(
+        ".master-activity-popup"
+    );
+
+    if (popup) {
+
+        const names = [
+            data.popupName,
+            "Pengunjung",
+            "Pengunjung lainnya"
+        ];
+
+        let next = 0;
+
+        setInterval(() => {
+
+            popup.classList.add("popup-hidden");
+
+            setTimeout(() => {
+
+                next = (next + 1) % names.length;
+
+                const name = popup.querySelector(
+                    ".master-popup-name"
+                );
+
+                const time = popup.querySelector(
+                    ".master-popup-time"
+                );
+
+                if (name) {
+                    name.textContent = names[next];
+                }
+
+                if (time) {
+
+                    time.textContent =
+                        new Date().toLocaleTimeString(
+                            "id-ID",
+                            {
+                                hour: "2-digit",
+                                minute: "2-digit"
+                            }
+                        );
+
+                }
+
+                popup.classList.remove("popup-hidden");
+
+            }, 300);
+
+        }, 5000);
+
+    }
+
+})();
+
+</script>
+</body>
+</html>
